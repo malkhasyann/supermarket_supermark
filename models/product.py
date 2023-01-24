@@ -28,7 +28,7 @@ class Product:
     @price.setter
     def price(self, value):
         if value <= 0:
-            raise ValueError('Product price cannot be less than or equal 0.')
+            raise ValueError('Product price can not be less than or equal 0.')
         self._price = value
 
     @description.setter
@@ -38,6 +38,6 @@ class Product:
     def __str__(self):
         return 'PRODUCT:\n' + \
             f'\tName: {self.name}\n' + \
-            f'\tPrice: {self.price}\n' + \
+            f'\tPrice: ${self.price}\n' + \
             f'\tSeller: {self.seller.username}\n' + \
             f'\tDescription: {self.description or "-"}\n'
