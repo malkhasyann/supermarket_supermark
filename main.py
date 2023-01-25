@@ -56,8 +56,7 @@ if __name__ == '__main__':
 
     user5.add_product_to_cart(p1)
     user5.add_product_to_cart(p2)
-    user5.add_product_to_cart(p2)
-
+    
     shop.transaction(user5.purchase_all_cart())
 
     shop.show_all_users()
